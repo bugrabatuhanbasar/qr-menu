@@ -379,30 +379,52 @@ body::after {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 14px 20px;
-    background: linear-gradient(0deg, rgba(13, 9, 8, 0.98) 0%, rgba(13, 9, 8, 0.95) 100%);
-    backdrop-filter: blur(20px);
-    border-top: 1px solid rgba(212, 165, 116, 0.15);
+    padding: 16px 20px;
+    background: rgba(13, 9, 8, 0.98);
+    backdrop-filter: blur(40px);
+    border-top: 1px solid rgba(212, 165, 116, 0.08);
     z-index: 80;
 }
 
-.footer-info {
-    max-width: 1200px;
+.footer-content {
+    max-width: 1400px;
     margin: 0 auto;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
 }
 
 .footer-hours {
+    font-family: 'DM Sans', sans-serif;
     font-size: 11px;
     font-weight: 600;
-    color: var(--color-amber);
-    margin-bottom: 3px;
+    color: var(--color-gold);
+    letter-spacing: 0.5px;
 }
 
-.footer-note {
-    font-size: 9px;
-    color: rgba(245, 241, 232, 0.5);
-    line-height: 1.4;
+.footer-dot {
+    font-size: 11px;
+    color: rgba(212, 165, 116, 0.4);
+}
+
+.footer-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgba(245, 241, 232, 0.6);
+    letter-spacing: 0.3px;
 }
 
 /* ===========================
@@ -436,6 +458,17 @@ body::after {
     .tab-btn {
         font-size: 12px;
         padding: 8px 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .footer-left {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -534,6 +567,22 @@ body::after {
         font-size: 14px;
         padding: 10px 24px;
     }
+
+    .footer {
+        padding: 18px 32px;
+    }
+
+    .footer-hours {
+        font-size: 12px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+
+    .footer-dot {
+        font-size: 12px;
+    }
 }
 
 /* Desktop (1025px - 1440px) */
@@ -585,6 +634,22 @@ body::after {
     .tab-btn {
         font-size: 15px;
         padding: 12px 28px;
+    }
+
+    .footer {
+        padding: 20px 40px;
+    }
+
+    .footer-hours {
+        font-size: 13px;
+    }
+
+    .footer-text {
+        font-size: 13px;
+    }
+
+    .footer-dot {
+        font-size: 13px;
     }
 }
 
@@ -641,15 +706,19 @@ body::after {
     }
 
     .footer {
-        padding: 16px 48px;
+        padding: 22px 48px;
     }
 
     .footer-hours {
-        font-size: 12px;
+        font-size: 14px;
     }
 
-    .footer-note {
-        font-size: 10px;
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .footer-dot {
+        font-size: 14px;
     }
 }
 
