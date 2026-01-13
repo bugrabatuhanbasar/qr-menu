@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treeb Coffee - Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'treeb-dark': '#0d0908',
+                        'treeb-brown': '#1c1511',
+                        'treeb-coffee': '#2a1f1a',
+                        'treeb-amber': '#d4a574',
+                        'treeb-gold': '#f4c583',
+                        'treeb-cream': '#f5f1e8',
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'body': ['DM Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Modern Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="brand-name">Treeb</h1>
+        </div>
+    </header>
+
+    <!-- Category Navigation -->
+    <nav class="category-nav">
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="espresso">Espresso</button>
+            <button class="tab-btn" data-category="cold-brew">Cold Brew</button>
+            <button class="tab-btn" data-category="iced">Iced</button>
+            <button class="tab-btn" data-category="specialty">Specialty</button>
+            <button class="tab-btn" data-category="tea">Tea</button>
+            <button class="tab-btn" data-category="smoothies">Smoothies</button>
+            <button class="tab-btn" data-category="food">Food</button>
+            <button class="tab-btn" data-category="desserts">Desserts</button>
+        </div>
+    </nav>
+
+    <!-- Menu Content -->
+    <main class="menu-container">
+        <!-- Espresso Category -->
+        <div class="category-content active" data-category="espresso">
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Espresso</h3>
+                            <span class="item-price">$3.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">Single</span>
+                            <span class="size-tag">Double</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1545665225-b23b99e4d45e?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Americano</h3>
+                            <span class="item-price">$4.00</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">12oz</span>
+                            <span class="size-tag">16oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card featured">
+                    <div class="featured-tag">Popular</div>
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Flat White</h3>
+                            <span class="item-price">$5.25</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">8oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1534778101976-62847782c213?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Cappuccino</h3>
+                            <span class="item-price">$4.75</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">6oz</span>
+                            <span class="size-tag">8oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1561882468-9110e03e0f78?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Latte</h3>
+                            <span class="item-price">$5.00</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">12oz</span>
+                            <span class="size-tag">16oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Cortado</h3>
+                            <span class="item-price">$4.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">4.5oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Macchiato</h3>
+                            <span class="item-price">$4.25</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">3oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1599639957043-f3aa5c986398?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Mocha</h3>
+                            <span class="item-price">$6.00</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">12oz</span>
+                            <span class="size-tag">16oz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cold Brew Category -->
+        <div class="category-content" data-category="cold-brew">
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Cold Brew</h3>
+                            <span class="item-price">$5.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">12oz</span>
+                            <span class="size-tag">16oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card featured">
+                    <div class="featured-tag">Signature</div>
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Nitro Cold Brew</h3>
+                            <span class="item-price">$6.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">12oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Vanilla Cold Brew</h3>
+                            <span class="item-price">$6.00</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">12oz</span>
+                            <span class="size-tag">16oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1520970014086-2208d157c9e2?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Caramel Cold Brew</h3>
+                            <span class="item-price">$6.00</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">12oz</span>
+                            <span class="size-tag">16oz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Iced Category -->
+        <div class="category-content" data-category="iced">
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Iced Latte</h3>
+                            <span class="item-price">$5.25</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">16oz</span>
+                            <span class="size-tag">20oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1578374173705-c08df0a66e61?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Iced Americano</h3>
+                            <span class="item-price">$4.25</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">16oz</span>
+                            <span class="size-tag">20oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1546003103-f7fa1b8e9a1e?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Iced Mocha</h3>
+                            <span class="item-price">$6.25</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">16oz</span>
+                            <span class="size-tag">20oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Iced Caramel Macchiato</h3>
+                            <span class="item-price">$5.75</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">16oz</span>
+                            <span class="size-tag">20oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card featured">
+                    <div class="featured-tag">Popular</div>
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1610632380930-a11f4fa60c2a?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Japanese Iced Coffee</h3>
+                            <span class="item-price">$5.00</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">12oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1592663968453-f0b8e33ef2c0?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Iced Vanilla Latte</h3>
+                            <span class="item-price">$5.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">16oz</span>
+                            <span class="size-tag">20oz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specialty Category -->
+        <div class="category-content" data-category="specialty">
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Honey Lavender Latte</h3>
+                            <span class="item-price">$6.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">Hot</span>
+                            <span class="size-tag">Iced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1556742031-c6961e8560b0?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Spanish Latte</h3>
+                            <span class="item-price">$6.25</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">Hot</span>
+                            <span class="size-tag">Iced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card featured">
+                    <div class="featured-tag">Seasonal</div>
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1571167530149-c6e3d5f3a843?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Cardamom Rose Latte</h3>
+                            <span class="item-price">$6.75</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">Hot</span>
+                            <span class="size-tag">Iced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Pistachio Latte</h3>
+                            <span class="item-price">$6.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">Hot</span>
+                            <span class="size-tag">Iced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1596981266633-da3ffa047edf?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Maple Cinnamon Latte</h3>
+                            <span class="item-price">$6.00</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">Hot</span>
+                            <span class="size-tag">Iced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Matcha Latte</h3>
+                            <span class="item-price">$5.75</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">Hot</span>
+                            <span class="size-tag">Iced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tea Category -->
+        <div class="category-content" data-category="tea">
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1563822249548-9a72b6df5b5e?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">English Breakfast</h3>
+                            <span class="item-price">$3.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">Hot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Earl Grey</h3>
+                            <span class="item-price">$3.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">Hot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1597318281699-26ee13e4d34c?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Green Tea</h3>
+                            <span class="item-price">$3.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">Hot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card featured">
+                    <div class="featured-tag">Popular</div>
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Chai Latte</h3>
+                            <span class="item-price">$5.00</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">Hot</span>
+                            <span class="size-tag">Iced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Chamomile</h3>
+                            <span class="item-price">$3.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">Hot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Peppermint Tea</h3>
+                            <span class="item-price">$3.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">Hot</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Smoothies Category -->
+        <div class="category-content" data-category="smoothies">
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Berry Blast</h3>
+                            <span class="item-price">$7.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">16oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card featured">
+                    <div class="featured-tag">Popular</div>
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1502741509-b6c371ee1144?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Mango Passion</h3>
+                            <span class="item-price">$7.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">16oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Green Power</h3>
+                            <span class="item-price">$8.00</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">16oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1577805947697-89e18249d767?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Banana Peanut Butter</h3>
+                            <span class="item-price">$7.75</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">16oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1622597467836-f3c423a4bcaa?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Tropical Sunrise</h3>
+                            <span class="item-price">$7.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">16oz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Acai Bowl Smoothie</h3>
+                            <span class="item-price">$8.50</span>
+                        </div>
+                        <div class="size-options">
+                            <span class="size-tag">16oz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Food Category -->
+        <div class="category-content" data-category="food">
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Almond Croissant</h3>
+                            <span class="item-price">$5.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Pain au Chocolat</h3>
+                            <span class="item-price">$5.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Sourdough Toast</h3>
+                            <span class="item-price">$7.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card featured">
+                    <div class="featured-tag">Popular</div>
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Breakfast Sandwich</h3>
+                            <span class="item-price">$8.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1547058881-309d229e5498?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Bagel with Cream Cheese</h3>
+                            <span class="item-price">$6.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1603046891726-36bfd957e19d?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Granola Bowl</h3>
+                            <span class="item-price">$7.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1612528443702-f6741f70a049?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Avocado Toast</h3>
+                            <span class="item-price">$8.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1551106652-a5bcf4b29ab6?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Turkey & Swiss Sandwich</h3>
+                            <span class="item-price">$9.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts Category -->
+        <div class="category-content" data-category="desserts">
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Chocolate Brownie</h3>
+                            <span class="item-price">$4.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card featured">
+                    <div class="featured-tag">Popular</div>
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Cheesecake</h3>
+                            <span class="item-price">$6.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Carrot Cake</h3>
+                            <span class="item-price">$5.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Tiramisu</h3>
+                            <span class="item-price">$6.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Chocolate Cookie</h3>
+                            <span class="item-price">$3.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1595666944516-bbb485958fb5?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Blueberry Muffin</h3>
+                            <span class="item-price">$4.25</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1587241321921-91a834d82ffc?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Banana Walnut Loaf</h3>
+                            <span class="item-price">$4.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1519915212116-7cfef71f1d3e?w=400&h=300&fit=crop');"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="item-name">Lemon Tart</h3>
+                            <span class="item-price">$5.75</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-info">
+            <p class="footer-hours">Open Daily 7AM - 7PM</p>
+            <p class="footer-note">All milk alternatives at no extra charge • Prices include tax</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
