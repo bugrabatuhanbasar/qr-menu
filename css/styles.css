@@ -62,21 +62,20 @@ body::after {
    =========================== */
 
 .header {
-    padding: 20px;
-    text-align: center;
+    padding: 18px 20px;
     background: rgba(13, 9, 8, 0.98);
-    backdrop-filter: blur(30px);
-    border-bottom: 1px solid rgba(212, 165, 116, 0.1);
+    backdrop-filter: blur(40px);
+    border-bottom: 1px solid rgba(212, 165, 116, 0.06);
     position: sticky;
     top: 0;
     z-index: 100;
-    animation: headerSlide 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+    animation: headerSlide 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 @keyframes headerSlide {
     from {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(-8px);
     }
     to {
         opacity: 1;
@@ -87,28 +86,34 @@ body::after {
 .header-content {
     max-width: 1400px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-accent {
+    width: 2px;
+    height: 18px;
+    background: linear-gradient(180deg, var(--color-amber), var(--color-gold));
+    border-radius: 1px;
+    box-shadow: 0 0 8px rgba(212, 165, 116, 0.3);
 }
 
 .brand-name {
     font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
     color: var(--color-cream);
-    position: relative;
-    display: inline-block;
-}
-
-.brand-name::after {
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--color-amber), transparent);
+    margin: 0;
+    line-height: 1;
+    opacity: 0.95;
 }
 
 /* ===========================
@@ -117,13 +122,13 @@ body::after {
 
 .category-nav {
     position: sticky;
-    top: 69px;
+    top: 59px;
     z-index: 90;
     background: rgba(13, 9, 8, 0.98);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(40px);
     padding: 16px 0;
-    border-bottom: 1px solid rgba(212, 165, 116, 0.08);
-    animation: navFade 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    border-bottom: 1px solid rgba(212, 165, 116, 0.06);
+    animation: navFade 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
@@ -433,9 +438,17 @@ body::after {
 
 /* Small Mobile (320px - 480px) */
 @media (max-width: 480px) {
+    .header {
+        padding: 16px 20px;
+    }
+
+    .brand-accent {
+        width: 2px;
+        height: 16px;
+    }
+
     .brand-name {
-        font-size: 24px;
-        letter-spacing: 3px;
+        font-size: 20px;
     }
 
     .menu-grid {
@@ -475,11 +488,15 @@ body::after {
 /* Tablet Portrait (481px - 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
     .header {
-        padding: 22px 24px;
+        padding: 20px 24px;
+    }
+
+    .brand-accent {
+        height: 20px;
     }
 
     .brand-name {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .menu-container {
@@ -508,7 +525,7 @@ body::after {
     }
 
     .category-nav {
-        top: 75px;
+        top: 65px;
         padding: 18px 0;
     }
 
@@ -521,11 +538,15 @@ body::after {
 /* Tablet Landscape & Small Desktop (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .header {
-        padding: 24px 32px;
+        padding: 22px 32px;
+    }
+
+    .brand-accent {
+        height: 22px;
     }
 
     .brand-name {
-        font-size: 36px;
+        font-size: 26px;
     }
 
     .menu-container {
@@ -554,8 +575,8 @@ body::after {
     }
 
     .category-nav {
-        top: 83px;
-        padding: 20px 0;
+        top: 71px;
+        padding: 18px 0;
     }
 
     .category-tabs {
@@ -588,11 +609,15 @@ body::after {
 /* Desktop (1025px - 1440px) */
 @media (min-width: 1025px) and (max-width: 1440px) {
     .header {
-        padding: 28px 40px;
+        padding: 24px 40px;
+    }
+
+    .brand-accent {
+        height: 24px;
     }
 
     .brand-name {
-        font-size: 42px;
+        font-size: 28px;
     }
 
     .menu-container {
@@ -621,8 +646,8 @@ body::after {
     }
 
     .category-nav {
-        top: 93px;
-        padding: 22px 0;
+        top: 77px;
+        padding: 20px 0;
     }
 
     .category-tabs {
@@ -656,12 +681,17 @@ body::after {
 /* Large Desktop (1441px+) */
 @media (min-width: 1441px) {
     .header {
-        padding: 32px 48px;
+        padding: 26px 48px;
+    }
+
+    .brand-accent {
+        width: 3px;
+        height: 26px;
     }
 
     .brand-name {
-        font-size: 48px;
-        letter-spacing: 6px;
+        font-size: 30px;
+        letter-spacing: 3px;
     }
 
     .menu-container {
@@ -690,8 +720,8 @@ body::after {
     }
 
     .category-nav {
-        top: 105px;
-        padding: 24px 0;
+        top: 83px;
+        padding: 22px 0;
     }
 
     .category-tabs {
